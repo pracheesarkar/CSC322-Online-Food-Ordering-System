@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dough </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00336a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: grey;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            margin: 0 5px;
+            background-color: #555;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        section p {
+            max-width: 600px;
+            margin: 0 auto; 
+            font-size: larger;
+            line-height: 1.5;
+            margin-right: 440px;
+        }
+        .checkout-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px;
+        }
+        .items {
+            flex: 1;
+            text-align: left;
+        }
+        .total {
+            flex: 1;
+            text-align: right;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #555;
+            color: #fff;
+            cursor: pointer;
+            margin: 0 5px;
+            margin-right: 50px;
+        }
+        .buttons button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rolling Dough</h1>
+    </header>
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Checkout.html">Checkout</a>
+    </nav>
+    <section>
+        <div class="checkout-container">
+            <div class="items">
+                <!-- Items here -->
+            </div>
+            <div class="total">
+                <h2>Total Price</h2>
+                <p>$X</p>
+                <div class="buttons">
+                    <button>Dine in</button>
+                    <button>Carryout</button>
+                    <button>Delivery</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
