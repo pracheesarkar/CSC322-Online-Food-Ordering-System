@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dough</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00336a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: grey;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            margin: 0 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        section p {
+            max-width: 600px;
+            margin: 0 auto; 
+            font-size: larger;
+            line-height: 1.5;
+        }
+
+        section h3 {
+            margin: 0 auto;
+            text-align: right;
+            margin-right: 500px;
+        }
+
+        .review-input {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .review-input h3 {
+            margin: 0;
+        }
+
+        .review-input textarea,
+        .review-input input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .review-input button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00336a;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rolling Dough</h1>
+    </header>
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Checkout.html">Checkout</a>
+    </nav>
+
+    <section>
+        <h2>Read/Write reviews on our products!</h2>
+        <p>We will take your feedback into consideration when making decisions on the future of Rolling Dough.</p>
+    </section>
+
+    <section>
+        <h3>Reviews</h3>
+    </section>
+
+    <section>
+        <div class="review-input">
+            <textarea placeholder="Enter your review here"></textarea>
+            <input type="text" placeholder="Order ID">
+            <button type="submit">Submit</button>
+        </div>
+    </section>
+
+</body>
+</html>
