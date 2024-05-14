@@ -27,11 +27,6 @@ Before you begin, ensure you have met the following requirements:
 - [Django](https://www.djangoproject.com/download/): Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Make sure you have Django installed on your system.
 
 
-### Installing Dependencies
-
-To install the project dependencies, run the following command:
-
-
 ### Running the Server
 
 To run the server locally, follow these steps:
