@@ -1,17 +1,21 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
+<br><br>
 <div class="container mb-5">
     <div class="row justify-content-center mt-1">
-        <div class="col-md-12 col-sm-12 p-4">
-            <form method="POST">
+        
+            <form method="POST" action = "">
                 {% csrf_token %}
-                <span class="entry-box">Food Name : <input type="text" name="FoodName" placeholder="Eg: &quot;Dragon-Roll&quot;"></span>
-                <span class="entry-box">Food Category : <input type="text" name="FoodCat" placeholder="Eg : &quot;Snacks&quot;"></span>
-                <span class="entry-box">Food Price : <input type="tel" name="FoodPrice" maxlength="6"  placeholder="&quot;in Rs&quot;" required></span>
-                <button type="submit" class="butn"  name="button">Add</button>
+                <span class="entry-box">Food Name : <input type="text" name="name" placeholder="name"></span>
+                <span class="entry-box">Food Price : <input type="tel" name="price" maxlength="6"  placeholder="price" required></span>
+                <span class="entry-box">Food Category : <input type="text" name="category" placeholder="1 or 2" required></span>
+                
+                
+                <br><br> 
+                <center><button type="submit" class="butn"  name="button">Add Item</button></center>
             </form>
-        </div>
+        
     </div>
 </div>
 {% endblock content %}

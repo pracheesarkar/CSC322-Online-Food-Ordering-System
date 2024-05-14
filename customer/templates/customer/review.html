@@ -1,0 +1,81 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<style>
+    section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-top: 0;
+            text-align: center;
+        }
+        section p {
+            max-width: 600px;
+            margin: 0 auto; 
+            font-size: larger;
+            line-height: 1.5;
+        }
+
+        section h3 {
+            margin: 0 auto;
+            text-align: right;
+            margin-right: 500px;
+        }
+
+    .review-input {
+            max-width: 600px;
+            text-align: left;
+        }
+
+        .review-input h3 {
+            margin: 0;
+        }
+
+        .review-input textarea,
+        .review-input input[type="text"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        .review-input button {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            background-color: #00336a;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+</style>
+<section>
+    <h2>Please Submit a Review on our Services and Products!</h2>
+    <p>We will take your feedback into consideration when making decisions on the future of Rolling Dough.</p>
+</section>
+
+<section>
+
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="review-input">
+            <form method="POST" action = "">
+                {% csrf_token %}
+                <span class="entry-box">Name : <input type="text" name="name" placeholder="Enter your name here"></span><br>
+                <span class="entry-box">Email: <input type="text" name="email" placeholder="Enter your email here"required></span><br>
+                <span class="entry-box">Review : <textarea name="review" placeholder="Enter your review here"required></textarea></span><br>
+                
+                
+                  
+                <button type="submit" class="butn"  name="button">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock content %}

@@ -141,6 +141,8 @@ MEDIA_URL = '/media/'
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
+ACCOUNT_SIGNUP_REDIRECT_URL = 'order'
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'

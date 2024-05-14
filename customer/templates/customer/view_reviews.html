@@ -1,0 +1,45 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<style>
+    body {
+        text-align: center;
+    }
+
+    .text-border {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 10px 20px;
+        display: inline-block;
+    }
+</style>
+
+<div class="container mb-5">
+    <div class="row justify-content-center mt-1">
+        <div class="p-4 text-center">
+            <h1>Reviews for Rolling Dough!</h1>
+            <a href="{% url 'index' %}">Go to the homepage</a>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-1">
+        <div class="p-1 text-center">
+            <a href="{% url 'reviews' %}">Submit a review</a>
+        </div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+        
+            
+            {% for rev in reviews %}
+            <div class="col-md-5 col-sm-12 text-center">
+                <span class="text-border">
+                <p>{{ rev.name }} </p> 
+                <p> {{ rev.review }}</p></span><br><br>
+            </div>
+            {% endfor %}
+
+        
+    </div>
+</div>
+
+{% endblock content %}

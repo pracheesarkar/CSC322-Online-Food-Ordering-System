@@ -1,0 +1,26 @@
+{% extends 'customer/base.html' %}
+
+{% block content %}
+<main>
+    <center><div class="middle">
+      <center ><legend style="margin-top:25px;box-shadow:0px 3px 5px;width:50%;background:white;border-radius:25px;font-family: 'Courgette', cursive;">Register Here</legend></center>
+      <div class="form-container">
+        <form class="" action="addcust" method="post">{% csrf_token %}
+        <span class="entry-box">First Name : <input type="text" name="CustFName" placeholder="Eg: &quot;Michael&quot;"></span>
+        <span class="entry-box">Last Name : <input type="text" name="CustLName" placeholder="Eg : &quot;Diaz&quot;"></span>
+        <span class="entry-box">Phone Number : <input type="tel" name="CustCont" maxlength="10" pattern="[0-9]{10}" placeholder="Eg : &quot;9876543210&quot;" required></span>
+        <span class="entry-box">Email Id : <input type="email" name="CustEmail" placeholder="Eg : &quot;someone@example.com&quot;"></span>
+        <span class="entry-box">Password : <input type="password" name="CustPass" placeholder="Eg : &quot;abCX124yZ$!&quot;"></span>
+        <span class="entry-box">Address : <textarea type="text" rows="3" name="Address" placeholder="Eg : &quot;123, pragati college,Datta Nagar Dombivali East&quot;" maxlength="140" required></textarea></span>
+        <br /><br />	
+        <center><button type="reset"class="butn" style="
+        background-image: linear-gradient(190deg, rgba(183,28,28 ,1), rgba(239,154,154 ,1));" name="button">Cancel</button>
+          &nbsp;&nbsp;<button type="submit"class="butn" name="button">Register</button>
+          <p><p style="font-size:14px;">Already have an account ? <a style="color:red;" href="login">Login</a></p></p>
+          </center>
+        </form>
+      </div>
+    </div></center>
+  </main>
+
+  {% endblock content %}

@@ -6,9 +6,9 @@
         <div class="col-md-12 col-sm-12 p-4">
             <form method="POST">
                 {% csrf_token %}
-                <div class="pt-5">
+                <div class="pt-5"> <h1>Cakes</h1>
                     {% for app in cakes %}
-                    <div class="row">
+                    <div class="row mt-4">
                         
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
@@ -24,7 +24,7 @@
                 {% endfor %}
                 </div>
 
-                <div class="pt-5">
+                <div class="pt-5"> <h1>Cookies</h1>
                     {% for entre in cookies %}
                     <div class="row mt-4">
                         <div class="col-md-8 col-sm-12">
@@ -40,6 +40,21 @@
                     </div>
                     <hr />
                     {% endfor %}
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Full Name</label>
+                    <input required class="form-control" type="text" placeholder="Your Name" name="name" />
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Email Address</label>
+                    <input required class="form-control" type="text" placeholder="example@company.com" name="email" />
+                </div>
+
+                <div class="form-group pt-3">
+                    <label for="name">Address</label>
+                    <input required class="form-control" type="text" name="address" />
                 </div>
 
                 <!-- Button trigger modal -->

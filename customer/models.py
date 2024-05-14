@@ -23,8 +23,18 @@ class OrderModel(models.Model):
     price = models.DecimalField(max_digits=7, decimal_places=2)
     items = models.ManyToManyField(
         'MenuItem', related_name='order', blank=True)
-    name = models.CharField(null=True, blank=True, max_length=50)
-    email = models.CharField(null = True, max_length=50, blank=True)
+    name = models.CharField(max_length=50, blank=True)
+    email = models.CharField(max_length=50, blank=True)
+    address = models.CharField(max_length=100, blank=True)
 
     def __str__(self):
         return f'Order: {self.created_on.strftime("%b %d %I: %M %p")}'
+    
+class ReviewModel(models.Model):
+    name = models.CharField(max_length=50, blank=True)
+    email = models.CharField(max_length=50, blank=True)
+    review = models.TextField()
+
+    def __str__(self):
+        return self.name
+

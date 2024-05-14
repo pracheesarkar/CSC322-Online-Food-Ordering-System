@@ -1,7 +1,7 @@
 {% extends 'staff/base.html' %}
 
 {% block content %}
-    <div class="container">
+<div class="container">
         <div class="row justify-content-center mt-3">
             <div class="card col-md-5 mr-3">
                 <h4 class="text-center pt-2">Today's Total Revenue</h4>
@@ -14,47 +14,20 @@
             </div>
         </div>
 
-        <div class="row justify-content-center">
-            <div class="col-md-12 mt-5">
-                <table class="table table-hover table-striped">
-                    <thead>
-                        <tr>
-                            <th scope="col">Order ID</th>
-                            <th scope="col">Price</th>
-                            <th scope="col">Name</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Street</th>
-                            <th scope="col">City</th>
-                            <th scope="col">State</th>
-                            <th scope="col">Zip Code</th>
-                            <th scope="col">Is Paid?</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        {% for order in orders %}
-                        <tr>
-                            <th scope="row">{{ order.pk }}</th>
-                            <td>{{ order.price }}</td>
-                            <td>{{ order.name }}</td>
-                            <td>{{ order.email }}</td>
-                            <td>{{ order.street }}</td>
-                            <td>{{ order.city }}</td>
-                            <td>{{ order.state }}</td>
-                            <td>{{ order.zip_code }}</td>
-                            <td>
-                                {% if order.is_paid %}
-                                <i style="color: green;" class="fas fa-check"></i>
-                                {% else %}
-                                <i style="color: red;" class="fas fa-times"></i>
-                                {% endif %}
-
-                            </td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
     </div>
+    <center><br>
+    <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+        <h2>Add Menu Item</h2>
+        <a href="{% url 'addfood' %}" class="btn btn-outline-primary">Add</a>
+    </div><br>
+    <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+        <h2>View Orders for Delivery</h2>
+        <a href="{% url 'deliver' %}" class="btn btn-outline-primary">View</a>
+    </div><br>
+    <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
+        <h2>Leave Complaint</h2>
+        <a href="{% url 'dashboard' %}" class="btn btn-outline-primary">Complain</a>
+    </div><br>
+    </center>
+
 {% endblock content %}

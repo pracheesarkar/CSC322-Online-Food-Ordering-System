@@ -1,21 +1,47 @@
 {% extends 'customer/base.html' %}
 
 {% block content %}
+<style>
+    section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h3 {
+            margin-top: 200;
+        }
+        section p {
+            max-width: 600px;
+            margin: 0 auto; 
+            font-size: larger;
+            line-height: 0.8cm;
+        }
+</style>
+<br><br>
+<section id="home">
+    <h3>Our Mission</h3>
+    <p>At Rolling Dough we aim to deliver the best service possible reguarding baked goods. We Offer
+        a variety of services here, and cater to our most loyal customers with the VIP system. We value
+        this systems because it rewards those who support us the most, and helps us acomplish our goal
+        of creating a community like eco system within our restuarant.
+    </p>
+</section>
 <div class="container mb-5">
     <div class="row justify-content-center mt-5">
         <div class="col-md-8 col-sm-12 offset-md-1 p-4 text-center">
-            <h1>Online Food Delivery Service</h1>
+            <title>Rolling Dough</title>
         </div>
     </div>
     <div class="row justify-content-center mt-1">
         <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
-            <h2>Place an Order!</h2>
-            <a href="{% url 'order' %}" class="btn btn-outline-primary">Order Now!</a>
+            <h2>Place Order</h2>
+            <a href="{% url 'order' %}" class="btn btn-outline-primary">Place Order</a>
         </div>
+        
         <div class="card col-md-5 col-sm-12 offset-md-1 p-4 text-center">
-            <h2>View Menu!</h2>
-            <a href="{% url 'order' %}" class="btn btn-outline-primary">View Menu!</a>
+            <h2>View Menu</h2>
+            <a href="{% url 'menu' %}" class="btn btn-outline-primary">View Menu</a>
         </div>
     </div>
 </div>
+
 {% endblock content %}
