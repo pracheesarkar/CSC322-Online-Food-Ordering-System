@@ -5,9 +5,12 @@ class Menuform(forms.ModelForm):
 	name = forms.CharField(max_length=100)
 	price = forms.DecimalField(max_digits=5, decimal_places=2)
 	category = forms.CharField(max_length=100)
+	image = forms.ImageField()
+
 	class Meta:
 		model = MenuItem
 		fields  = "__all__"
+	
 
 
 

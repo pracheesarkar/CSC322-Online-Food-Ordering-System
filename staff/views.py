@@ -18,10 +18,21 @@ from .forms import *
 
 def addfood(request):
     if request.method == "POST":
-        form = Menuform(request.POST)
+        form = Menuform(request.POST, request.FILES)
         if form.is_valid():
-            form.save()
+            name = form.cleaned_data.get("name")
+            price = form.cleaned_data.get("price")
+            category = form.cleaned_data.get("category")
+            image = form.cleaned_data.get("image")
+            obj = MenuItem.objects.create(
+                name = name,
+                price = price,
+                image = image
+            )
+            obj.category.add(category)
+            obj.save()
             return redirect("/order")
+        
     else:
         form = Menuform()
     return render(request,'staff/addfood.html',{'form':form})

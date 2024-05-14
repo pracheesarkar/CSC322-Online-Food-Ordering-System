@@ -9,7 +9,9 @@
                 <div class="pt-5"> <h1>Cakes</h1>
                     {% for app in cakes %}
                     <div class="row mt-4">
-                        
+                        <div class="col-md-3 col-sm-12">
+                            <img class="rounded" src="{{ app.image.url }}" width="150" height="100"/>
+                        </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">
@@ -27,6 +29,9 @@
                 <div class="pt-5"> <h1>Cookies</h1>
                     {% for entre in cookies %}
                     <div class="row mt-4">
+                        <div class="col-md-3 col-sm-12">
+                            <img class="rounded" src="{{ entre.image.url }}" width="150" height="100"/>
+                        </div>
                         <div class="col-md-8 col-sm-12">
                             <div class="d-flex flex-row">
                                 <div class="form-group form-check">

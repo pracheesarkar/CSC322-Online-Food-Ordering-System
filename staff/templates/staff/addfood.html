@@ -5,16 +5,11 @@
 <div class="container mb-5">
     <div class="row justify-content-center mt-1">
         
-            <form method="POST" action = "">
-                {% csrf_token %}
-                <span class="entry-box">Food Name : <input type="text" name="name" placeholder="name"></span>
-                <span class="entry-box">Food Price : <input type="tel" name="price" maxlength="6"  placeholder="price" required></span>
-                <span class="entry-box">Food Category : <input type="text" name="category" placeholder="1 or 2" required></span>
-                
-                
-                <br><br> 
-                <center><button type="submit" class="butn"  name="button">Add Item</button></center>
-            </form>
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
         
     </div>
 </div>
