@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dough</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #00336a;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: grey;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px 5px 0 0;
+            margin: 0 5px;
+            background-color: #555;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        section h2 {
+            margin-top: 0;
+        }
+        section p {
+            max-width: 600px;
+            margin: 0 auto; 
+            font-size: larger;
+            line-height: 0.8cm;
+        }
+
+        /* Container for the Place Order box */
+        #actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .place-order-container,
+        .view-menu-container {
+            width: 300px;
+            height: 150px;
+            background-color: #ffffff;
+            border: 2px solid #d7e2eb;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .place-order-header,
+        .view-menu-header {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .place-order-button,
+        .view-menu-button {
+            width: 200px;
+            height: 40px;
+            background-color: #ffffff;
+            color: #000000;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            outline: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .place-order-button:hover,
+        .view-menu-button:hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        /* Bottom Navbar */
+        .bottom-navbar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .bottom-navbar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 20px;
+            border-radius: 5px;
+            margin: 0 5px;
+            background-color: #555;
+        }
+
+        .bottom-navbar a:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rolling Dough</h1>
+    </header>
+    <nav>
+        <a href="HomePage.html">Home</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Reviews.html">Reviews</a>
+        <a href="Locations.html">Locations</a>
+        <a href="Checkout.html">Checkout</a>
+    </nav>
+    <section id="home">
+        <h2>About Us</h2>
+        <h3>Our Mission</h3>
+        <p>At Rolling Dough we aim to deliver the best service possible regarding baked goods. We offer
+            a variety of services here, and cater to our most loyal customers with the VIP system. We value
+            this system because it rewards those who support us the most, and helps us accomplish our goal
+            of creating a community-like ecosystem within our restaurant.
+        </p>
+    </section>
+    <div id="actions">
+        <div class="place-order-container">
+            <h3 class="place-order-header">Place Order</h3>
+            <button class="place-order-button">PLACE ORDER</button>
+        </div>
+        <div class="view-menu-container">
+            <h3 class="view-menu-header">View Menu</h3>
+            <button class="view-menu-button">VIEW MENU</button>
+        </div>
+    </div>
+    <!-- Bottom Navbar -->
+    <div class="bottom-navbar">
+        <a href="StaffLogin.html">Staff Login</a>
+        <a href="StaffDashboard.html">Staff Dashboard</a>
+    </div>
+
+</body>
+</html>
+
