@@ -27,3 +27,14 @@ Before you begin, ensure you have met the following requirements:
 To install the project dependencies, run the following command:
 
 
+###Running the Server locally
+
+1. Clone Repository to local machine: git clone https://github.com/your-username/CSC322-Rolling-Dough-Food-Ordering-System.git
+2. Navigate to project directory: cd CSC322-Rolling-Dough-Food-Ordering-System
+3. Activate virtual environment: source myenv/bin/activate
+4. Install project dependences: pip install -r requirements.txt
+5. Run Django server: python manage.py runserver
+6. Once server is running, open your web browser and navigate to http://localhost:8000 to open the site.
+7. To access the admin page, go to http://localhost:8000/admin and login with the following credentials: username: admin, password: password1
+
+
