@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rolling Dough</title>
+    <title>Rolling Dough - Login</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -81,6 +81,25 @@
             background-color: grey;
         }
 
+        /* Style for the inspector login button */
+        .inspector-login-button {
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .inspector-login-button input[type="submit"] {
+            width: 100%;
+            background-color: #ff0000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .inspector-login-button input[type="submit"]:hover {
+            background-color: #cc0000;
+        }
     </style>
 </head>
 <body>
@@ -90,15 +109,32 @@
     </div>
     <div class="login-container">
         <h2>Login</h2>
-        <form action="#" method="post">
+        <form action="#" method="post" onsubmit="return login()">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
             <input type="submit" value="Login">
         </form>
     </div>
     <div class="surf-button">
+        <form action="HomePage.html">
         <input type="submit" value="Surf">
         <p>Or click here to surf the menu without an account (Only members can order).</p>
+   </form>
     </div>
+    <!-- Inspector login button -->
+    <div class="inspector-login-button">
+        <form action="InspectorLogin.html">
+            <input type="submit" value="Inspector Login">
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            alert("Login successful!"); 
+            window.location.href = "HomePage.html"; 
+            return false; 
+        }
+    </script>
 </body>
 </html>
+

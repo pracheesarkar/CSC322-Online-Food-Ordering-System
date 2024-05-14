@@ -104,5 +104,25 @@
         <a href="LoginPage.html">Log out</a>
         </div>
     </section>
+    <script>
+        // Check if the shutdown flag is set
+        if (localStorage.getItem('shutdownFlag')) {
+            // Display a message indicating the restaurant is shut down
+            document.body.innerHTML = `
+                <header>
+                    Rolling Dough - Shutdown
+                </header>
+                <section>
+                    <h1>
+                        The restaurant is currently shut down due to health concerns.
+                    </h1>
+                    <h2>
+                        Please logout from the inspector account.
+                    </h2>
+                </section>
+            `;
+        }
+    </script>
 
+    
 </Body>
