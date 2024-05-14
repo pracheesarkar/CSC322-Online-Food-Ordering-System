@@ -13,8 +13,10 @@ The Rolling Dough Food Ordering System is an online bakery developed as part of 
 - **Complaint Handling**: Efficiently manage complaints from customers and employees, ensuring prompt resolution.
 - **Health Inspection**: Monitor and maintain the restaurant's health standards, with alerts for inspections and rating updates.
 
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
 
 ### Prerequisites
 
@@ -23,6 +25,7 @@ Before you begin, ensure you have met the following requirements:
 - [Python 3](https://www.python.org/downloads/): Make sure you have Python 3 installed on your system. You can download Python from the official website.
 
 - [Django](https://www.djangoproject.com/download/): Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Make sure you have Django installed on your system.
+
 
 ### Installing Dependencies
 
