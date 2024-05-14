@@ -27,14 +27,51 @@ Before you begin, ensure you have met the following requirements:
 To install the project dependencies, run the following command:
 
 
-###Running the Server locally
+### Running the Server
 
-1. Clone Repository to local machine: git clone https://github.com/your-username/CSC322-Rolling-Dough-Food-Ordering-System.git
-2. Navigate to project directory: cd CSC322-Rolling-Dough-Food-Ordering-System
-3. Activate virtual environment: source myenv/bin/activate
-4. Install project dependences: pip install -r requirements.txt
-5. Run Django server: python manage.py runserver
-6. Once server is running, open your web browser and navigate to http://localhost:8000 to open the site.
-7. To access the admin page, go to http://localhost:8000/admin and login with the following credentials: username: admin, password: password1
+To run the server locally, follow these steps:
+
+1. Clone this repository to your local machine:
+
+    ```bash
+    git clone https://github.com/your-username/CSC322-Rolling-Dough-Food-Ordering-System.git
+    ```
+
+2. Navigate to the project directory:
+
+    ```bash
+    cd CSC322-Rolling-Dough-Food-Ordering-System
+    ```
+
+3. Activate the virtual environment:
+
+    ```bash
+    source myenv/bin/activate
+    ```
+
+4. Install project dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5. If you encounter any issues related to missing dependencies, install them using the following commands:
+
+    ```bash
+    pip install django-crispy-forms
+    pip install django-allauth
+    ```
+
+6. Run the Django server:
+
+    ```bash
+    python manage.py runserver
+    ```
+
+7. Once the server is running, open your web browser and navigate to [http://localhost:8000](http://localhost:8000) to access the site.
+
+8. To access the admin page, go to [http://localhost:8000/admin](http://localhost:8000/admin) and log in with the following credentials:
+    - Username: admin
+    - Password: password1
 
 
