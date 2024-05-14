@@ -68,16 +68,16 @@ To run the server locally, follow these steps:
     python manage.py runserver
     ```
 
-### Troubleshooting
-
-If you encounter any issues during the setup process, try the following troubleshooting steps:
-- **Database Migration Errors**:  If you encounter errors related to database migrations, make sure you have applied all pending migrations using the `python manage.py migrate` command.
-- **Environment Setup Issues**: Double-check that your virtual environment is activated before installing dependencies or running the server. Use the command `source myenv/bin/activate` to activate the virtual environment.
-
 7. Once the server is running, open your web browser and navigate to [http://localhost:8000](http://localhost:8000) to access the site.
 
 8. To access the admin page, go to [http://localhost:8000/admin](http://localhost:8000/admin) and log in with the following credentials:
     - Username: admin
     - Password: password1
 
+
+### Troubleshooting
+
+If you encounter any issues during the setup process, try the following troubleshooting steps:
+- **Database Migration Errors**:  If you encounter errors related to database migrations, make sure you have applied all pending migrations using the `python manage.py migrate` command.
+- **Environment Setup Issues**: Double-check that your virtual environment is activated before installing dependencies or running the server. Use the command `source myenv/bin/activate` to activate the virtual environment.
 
