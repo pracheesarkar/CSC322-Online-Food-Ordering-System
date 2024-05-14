@@ -80,4 +80,5 @@ To run the server locally, follow these steps:
 If you encounter any issues during the setup process, try the following troubleshooting steps:
 - **Database Migration Errors**:  If you encounter errors related to database migrations, make sure you have applied all pending migrations using the `python manage.py migrate` command.
 - **Environment Setup Issues**: Double-check that your virtual environment is activated before installing dependencies or running the server. Use the command `source myenv/bin/activate` to activate the virtual environment.
+- **Missing Dependency Errors**: If you receive errors indicating missing dependencies, ensure that you have installed all required packages listed in the `requirements.txt` file. Use the command `pip install -r requirements.txt` to install the dependencies.
 
