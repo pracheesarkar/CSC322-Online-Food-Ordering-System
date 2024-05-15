@@ -25,6 +25,8 @@ Before you begin, ensure you have met the following requirements:
 - [Python 3](https://www.python.org/downloads/): Make sure you have Python 3 installed on your system. You can download Python from the official website.
 
 - [Django](https://www.djangoproject.com/download/): Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. Make sure you have Django installed on your system.
+  
+- Django_allauth 
 
 
 ### Running the Server
